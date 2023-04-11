@@ -45,6 +45,7 @@ class Square extends Polygon {
     const [a, b, c,d] = this.arr;
     return (a === b)&& (b=== c)&& (c=== d)
    }
+<<<<<<< HEAD
   get area() {
     if (this.isValid === true) {
       const side = this.arr[0];
@@ -56,3 +57,13 @@ class Square extends Polygon {
 
 let square = new Square( [ 5, 5, 5, 5 ] )
 let square2 = new Square( [ 5, 4, 3, 2 ] )
+=======
+  get Area() {
+    if (!this.isValid) {
+      return undefined;
+    }
+    
+    return this.arr[0] ** 2
+  }
+}
+>>>>>>> 44d9bb1071a7980ed1f3bfcf3bef8b759e23405a
